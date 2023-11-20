@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {CurrencyService} from "../services/currency.service";
+import { Component, OnInit } from '@angular/core';
+import { CurrencyService } from "../services/currency.service";
 
 @Component({
   selector: 'app-header',

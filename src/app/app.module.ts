@@ -6,7 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CurrencyConverterComponent } from './currency-converter/currency-converter.component';
-import {CurrencyService} from "./services/currency.service";
+import { CurrencyService } from "./services/currency.service";
 import { HeaderComponent } from './header/header.component';
 
 @NgModule({

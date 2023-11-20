@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import {CurrencyService} from "../services/currency.service";
+import { CurrencyService } from "../services/currency.service";
 
 @Component({
   selector: 'app-currency-converter',
