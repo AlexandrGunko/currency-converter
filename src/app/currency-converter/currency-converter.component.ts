@@ -71,7 +71,3 @@ export class CurrencyConverterComponent implements OnInit {
   }
 }
 
-
-
-
-

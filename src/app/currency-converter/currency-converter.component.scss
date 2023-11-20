@@ -1,20 +1,57 @@
 .converter {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  height: 250px;
+  margin: 0 auto;
   padding: 20px;
-  text-align: center;
-}
+  background: #ebc97d;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-.header {
-  margin-bottom: 20px;
-}
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
 
-.currency-container {
-  margin-bottom: 10px;
-}
+    h1 {
+      margin: 0;
+    }
+  }
 
-label {
-  display: block;
-  margin-bottom: 5px;
+  form {
+    text-align: center;
+  }
+
+  .conversion {
+    display: flex;
+    flex-direction: column;
+
+    .currency-container {
+      margin-bottom: 40px;
+
+      label {
+        display: block;
+        margin-right: 10px;
+        font-weight: bold;
+      }
+
+      input,
+      select {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: #f8f8f8;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #e0e0e0;
+        }
+      }
+
+      select {
+        margin-left: 10px;
+      }
+    }
+  }
 }
