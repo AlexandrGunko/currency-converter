@@ -1,0 +1,27 @@
+<div class="converter">
+  <div class="header">
+    <h1>Конвертер валют</h1>
+  </div>
+  <form [formGroup]="converterForm">
+    <div class="conversion">
+      <div class="currency-container">
+        <label for="amount1">в мене є:</label>
+        <input type="number" id="amount1" formControlName="amount1" (input)="convertCurrencies()">
+        <select id="currency1" formControlName="currency1" (change)="onCurrencyChange()">
+          <option value="UAH">UAH</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </div>
+      <div class="currency-container">
+        <label for="amount2">я отримаю:</label>
+        <input type="number" id="amount2" formControlName="amount2" (input)="convertCurrencies()">
+        <select id="currency2" formControlName="currency2" (change)="onCurrencyChange()">
+          <option value="UAH">UAH</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+      </div>
+    </div>
+  </form>
+</div>

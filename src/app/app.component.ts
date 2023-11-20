@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {CurrencyService} from "./services/currency.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'currency-converter';
+  exchangeRates: any;
+
+  constructor(private currencyService: CurrencyService) {}
+
+  ngOnInit(): void {
+    this.fetchExchangeRates();
+  }
+
+  fetchExchangeRates() {
+    this.currencyService.getExchangeRate('USD').subscribe((data: any) => {
+      this.exchangeRates = data.rates;
+    });
+  }
 }
